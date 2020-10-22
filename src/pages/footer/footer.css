@@ -1,0 +1,46 @@
+footer {
+    background-color: rgb(233, 199, 196);
+    
+    color: salmon;
+
+  }
+  .img img{
+      height: 30px;
+      width: 30px;
+      margin-right: 1rem;
+      
+  }
+
+  .copyright {
+      font-size: 11px;
+      text-align: center;
+      color: rosybrown;
+  }
+
+
+  
+  .contato1{
+    margin-left: 5rem;
+  }
+  .contato2{
+      font-size: 13px;
+      color: rgb(153, 83, 83);
+      margin-left: 5rem;
+  }
+  .contato2 a{
+    color:snow; 
+}
+  .contato2 a:hover{
+    color: snow;
+}
+
+
+.endereco1{
+    margin-left: 12rem;
+}
+.endereco {
+    color: rgb(153, 83, 83);
+    font-size: 13px;
+    margin-left: 12rem;
+
+}

@@ -1,1 +1,32 @@
-.bg1 {background-color: lightblue;}
+.bg1 {background-image: url('../../img/wcolor.jpg');}
+
+
+.fonte {font-family: 'Unica One', cursive;}
+
+.circle-photo {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.bg-card {
+    background-color: rgb(167, 82, 108)!important;
+    color: rgb(252, 252, 252);
+    margin: 1rem;
+}
+
+.bg-card2 {
+    background-color: rgb(167, 82, 108)!important;
+    color: rgb(252, 252, 252);
+    margin: 1rem;
+}
+
+
+
+
+.titulo {
+    font-size: 22px;
+    text-align: center;
+    color: aliceblue;
+}
+

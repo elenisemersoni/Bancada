@@ -28,34 +28,47 @@ class Github extends Component {
       
         return <>
 
-                <div className='row '>
-                    <div className= 'col-3  bg1'>
-                        <br/>
-                        <p className='text-center'>Github Infos</p>
-                        <img className='ml-1' src={user.avatar_url}></img>
-                        <br></br>
-                        <br></br>
-                        <p>User: {user.login} </p> 
-                        <p>Twitter:{user.twitter_username}</p>
-                        <p>Name: {user.name}</p>
-                        <p>Local:{user.location}</p>
+<div className="container">
+                 <div className="row bg1">
+                    <div className="col-md-3 col-12">
+                        <p className="titulo">Meu GitHub Infos</p>
+                        <div>
+                            <img  className="circle-photo" src={user.avatar_url} alt="Profile photo"></img>
+                            <div className='card bg-card2 '>
+                                <span className="font-weight-bold ml-1">Login:</span> @{user.login} <br/>
+                                <span className="font-weight-bold ml-1">Name:</span> {user.name} <br/>
+                                <span className="font-weight-bold ml-1">Company:</span> {user.company} <br/>
+                                <span className="font-weight-bold ml-1">Location:</span> {user.location} <br/>
+                                <div className="row">
+                                    <div className="col-6 ml-1">
+                                        Seguidores
+                                        <p>{user.followers}</p>
+                                    </div>
+                                    <div className="col-6 ml-1">
+                                        Seguindo
+                                        <p>{user.following}</p>
+                                    </div>
+                                   
+                                </div>
+                                <p className='ml-1'>
+                                        Bio:<br/>
+                                        {user.bio}
+                                    </p>
+                            </div>
+                        </div>
                     </div>
-
-                     <div className='col-9'>
-                         <br></br>
-                        {repo.map(repositorio => 
-                            <p> Nome do Repositório: {repositorio.name}<br/>
-                                Descrição: {repositorio.descripition}<br/>
+                    <div className="col-md-9 col-12">
+                    {repo.map(
+                        repositorio => 
+                            <div className="card bg-card">
+                                Nome do Repositorio: {repositorio.name} <br/>
+                                Descrição: {repositorio.deion} <br/>
                                 Link do Repositório: <a href={repositorio.html_url}>Clique Aqui</a>
-                            </p> 
-                            )}
-
-                        
-
-                     </div>
-
-                 </div>
-           
+                            </div>
+                    )}
+                    </div>
+                </div>
+           </div>
         </>; 
 
     };

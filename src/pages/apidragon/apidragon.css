@@ -1,0 +1,30 @@
+.titulo{
+    color: rgb(170, 72, 92);
+   
+}
+
+.texto{
+    color: rgb(170, 72, 92);
+}
+
+
+.bg{
+    background-image: url('../../img/wcolor.jpg');
+}
+
+.del{
+    color: pink;
+    background-color: rgb(146, 38, 61);
+}
+
+.edit {
+    color: rgb(208, 224, 236);
+    background-color: rgb(92, 180, 192);
+}
+
+
+.criar{ color: rgb(238, 238, 238);
+    background-color: rgb(24, 126, 116);
+
+}
+
