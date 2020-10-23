@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+.corfundo {
+  background-color: rgb(187, 120, 98);
+}
+.textocor{
+  color: white}
+
+  #root {
+    background-color: darksalmon;
+  }

@@ -1,6 +1,11 @@
-.bg1 {background-image: url('../../img/wcolor.jpg');}
 
+.bg2 {
+    background-image: url('../../img/wcolor.jpg');
+}
 
+.bg1 {
+    background-image: url(../../img/pink.jpg);
+}
 .fonte {font-family: 'Unica One', cursive;}
 
 .circle-photo {
@@ -10,18 +15,16 @@
 }
 
 .bg-card {
-    background-color: rgb(167, 82, 108)!important;
+    background-color: rgb(218, 156, 136)!important;
     color: rgb(252, 252, 252);
     margin: 1rem;
 }
 
 .bg-card2 {
-    background-color: rgb(167, 82, 108)!important;
+    background-color: rgb(218, 156, 136)!important;
     color: rgb(252, 252, 252);
     margin: 1rem;
 }
-
-
 
 
 .titulo {

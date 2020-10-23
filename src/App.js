@@ -9,6 +9,13 @@ import Footer from './pages/footer/footer';
 function App() {
   return (
     <div >
+      <nav className='text-center corfundo textocor '>
+              <a className='mx-2 textocor'href= 'Home'>Home</a>
+              <a className='mx-2  textocor' href= 'Sobre'>Sobre</a>
+              <a className='mx-2 textocor' href= 'Contato'>Contato</a>
+              <a className='mx-2 textocor' href= 'Serviços'>Serviços</a>
+              <a className='mx-2 textocor' href= 'Parceiro'>Parceiros</a><br></br>
+              </nav>
      <Github></Github>
      <Apidragon></Apidragon>
      <Footer></Footer>

@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
-import './apidragon.css'
+import React, { Component } from 'react';
+import {Modal,Button,Form} from 'react-bootstrap';
+import './apidragon.css';
+
 
 class Apidragon extends Component {
     constructor(){
         super();
-        this.state = {listDragons: [], dragon: {}, id_dragon: 0};
+        this.state = {listDragons: [], showModal: false, showAlert: false};
     }
 
     componentDidMount(){
-        fetch('http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon') 
-        .then( response => response.json() ) 
-        .then( data => {this.setState({listDragons: data}); } );
+       this.getList();
     }
 
     getList(){
@@ -19,8 +19,14 @@ class Apidragon extends Component {
         .then( data => {this.setState({listDragons: data}); } );
 
     }
-    onCreate(){
-        const dragon = {name: 'Hungaro', type: 'Pottah'};
+    onCreate(event){
+        event.preventDefault();
+        let form = event.target;
+
+        const dragon = {
+            name: form.elements.name.value, 
+            type: form.elements.type.value,
+        };
         const request = {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -39,14 +45,24 @@ class Apidragon extends Component {
     OnDelete(id){
         fetch('http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon/'+id, {method:'DELETE'})
         .then(response => response.json())
-        .then(response2 => this.getList())
+        
     }
 
+    handleModalClose(){
+        this.setState({showModal:false});
+    }
+
+    handleModalOpen(){
+        this.setState({showModal:true});
+    }
+
+
+
     render(){
-        const {listDragons} = this.state;
+        const {listDragons, showModal,showAlert} = this.state;
         return <>
-            <div className=" bg container">
-            <button onClick={() => this.onCreate()} className='btn criar ml-5 my-3'>Criar</button>
+            <div className=" bg container mb-2">
+            <button onClick={() => this.handleModalOpen()} className='btn criar ml-5 my-3'>Criar</button>
                 <div className="row">
                     <div className="col">
                         <table className='table'>
@@ -84,6 +100,35 @@ class Apidragon extends Component {
                     </div>
                 </div>
             </div>
+            <Modal show={showModal} onHide={() => this.handleModalClose()}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Criar Dragão</Modal.Title>
+                </Modal.Header>
+
+                <Modal.Body>
+                    <Form onSubmit={this.onCreate}>
+                        <Form.Group controlId='formName' >
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control type='text' name='name'></Form.Control>
+                        </Form.Group>
+                        <Form.Group controlId='formType' >
+                            <Form.Label>Type</Form.Label>
+                            <Form.Control type='text' name='type'></Form.Control>
+                        </Form.Group>
+                        <Button variant='primary' type='submit'>
+                            Submit
+                        </Button>
+                    </Form>
+                
+                </Modal.Body>
+
+                <Modal.Footer>
+                    <Button variant='secondary' onClick={() => this.handleModalClose()}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+
+            </Modal>
         </>;
     }
 }

@@ -28,13 +28,13 @@ class Github extends Component {
       
         return <>
 
-<div className="container">
-                 <div className="row bg1">
-                    <div className="col-md-3 col-12">
-                        <p className="titulo">Meu GitHub Infos</p>
+<div className="container bg2 mb-2 ">
+                 <div className="row ">
+                    <div className="col-md-3 col-12 bg1">
+                        <p className="titulo ">Meu GitHub Infos</p>
                         <div>
                             <img  className="circle-photo" src={user.avatar_url} alt="Profile photo"></img>
-                            <div className='card bg-card2 '>
+                            <div className='card bg-card2'>
                                 <span className="font-weight-bold ml-1">Login:</span> @{user.login} <br/>
                                 <span className="font-weight-bold ml-1">Name:</span> {user.name} <br/>
                                 <span className="font-weight-bold ml-1">Company:</span> {user.company} <br/>
