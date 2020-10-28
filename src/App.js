@@ -2,6 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import Github from './pages/github/github';
 import Apidragon from './pages/apidragon/apidragon';
+import Sobre from './pages/sobre/sobre';
 import './App.css';
 import Footer from './pages/footer/footer';
 
@@ -17,6 +18,7 @@ function App() {
               <a className='mx-2 textocor' href= 'Parceiro'>Parceiros</a><br></br>
               </nav>
      <Github></Github>
+     <Sobre></Sobre>
      <Apidragon></Apidragon>
      <Footer></Footer>
 
