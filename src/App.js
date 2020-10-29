@@ -16,24 +16,39 @@ function App() {
 
     <Cabeçalho></Cabeçalho>
       <nav className='text-center corfundo textocor '>
-              <a className='mx-2 textocor'href= 'Home'>Home</a>
-              <a className='mx-2 textocor' href= 'Contato'>Perfil</a>
-              <a className='mx-2  textocor' href= 'Sobre'>Playlists</a>
-              <a className='mx-2 textocor' href= 'Livros'>Livros</a>
-              <a className='mx-2 textocor' href= 'Filmes'>Filmes</a>
-              <a className='mx-2 textocor' href= 'Dragon'>Dragon</a>
+              <a className='mx-2 textocor'href= '#Home'>Home</a>
+              <a className='mx-2 textocor' href= '#Contato'>Perfil</a>
+              <a className='mx-2  textocor' href= '#Sobre'>Playlists</a>
+              <a className='mx-2 textocor' href= '#Livros'>Livros</a>
+              <a className='mx-2 textocor' href= '#Filmes'>Filmes</a>
+              <a className='mx-2 textocor' href= '#Dragon'>Dragon</a>
               <br></br>
              
               </nav>
-     <Github></Github>
+     <Github>
+     <div id='Home'></div>
+            <div class='Home'></div>
+     </Github>
      <Contato>
           <div id='Contato'></div>
             <div class='Contato'></div>
      </Contato>
-     <Sobre></Sobre>
-     <Livros></Livros>
-     <Filmes></Filmes>
-     <Apidragon></Apidragon>
+     <Sobre>
+     <div id='Sobre'></div>
+            <div class='Sobre'></div>
+     </Sobre>
+     <Livros>
+     <div id='Livros'></div>
+            <div class='Livros'></div>
+     </Livros>
+     <Filmes>
+     <div id='Filmes'></div>
+            <div class='Filmes'></div>
+     </Filmes>
+     <Apidragon>
+     <div></div>
+            <div class='dragon'></div>
+     </Apidragon>
      <Footer></Footer>
 
     </div>
