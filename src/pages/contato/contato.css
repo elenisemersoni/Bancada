@@ -1,7 +1,7 @@
 body {
 	
 	font-size: 14px;
-	font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
+	font-family: 'Fredoka One', cursive;
 	background-color:  rgb(235, 152, 127);
 }
 .btn:hover,
@@ -59,7 +59,7 @@ body {
 	top: 0;
 	left: 0;
 	background-color: rgb(255, 206, 206);
-    box-shadow: 0 1px 3px 0 rgba(88, 57, 57, 0.568);
+    box-shadow: 0 1px 3px 0 rgba(88, 57, 57, 0.048);
 }
 
 /* front pane, placed above back */
@@ -111,6 +111,7 @@ body {
 
 .card .content{
     background-color: rgba(160, 111, 111, 0.171);
+    font-family: 'Fredoka One', cursive;
     box-shadow: none;
     padding: 10px 20px 20px;
 }
@@ -275,7 +276,7 @@ body {
     width: 60px;
 }
 .navbar-default .navbar-brand-logo .brand{
-    color: #555;
+    color: rgba(85, 85, 85, 0.301);
 }
 
 

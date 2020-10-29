@@ -5,21 +5,34 @@ import Apidragon from './pages/apidragon/apidragon';
 import Sobre from './pages/sobre/sobre';
 import './App.css';
 import Footer from './pages/footer/footer';
-import Contato from './pages/contato/contato'
+import Contato from './pages/contato/contato';
+import Filmes from './pages/filmes/filmes';
+import Livros from './pages/livros/livros';
+import Cabeçalho from './pages/cabeçalho/cabeçalho';
 
 function App() {
   return (
     <div >
+
+    <Cabeçalho></Cabeçalho>
       <nav className='text-center corfundo textocor '>
               <a className='mx-2 textocor'href= 'Home'>Home</a>
-              <a className='mx-2  textocor' href= 'Sobre'>Sobre</a>
-              <a className='mx-2 textocor' href= 'Contato'>Contato</a>
-              <a className='mx-2 textocor' href= 'Serviços'>Serviços</a>
-              <a className='mx-2 textocor' href= 'Parceiro'>Parceiros</a><br></br>
+              <a className='mx-2 textocor' href= 'Contato'>Perfil</a>
+              <a className='mx-2  textocor' href= 'Sobre'>Playlists</a>
+              <a className='mx-2 textocor' href= 'Livros'>Livros</a>
+              <a className='mx-2 textocor' href= 'Filmes'>Filmes</a>
+              <a className='mx-2 textocor' href= 'Dragon'>Dragon</a>
+              <br></br>
+             
               </nav>
      <Github></Github>
-     <Contato></Contato>
+     <Contato>
+          <div id='Contato'></div>
+            <div class='Contato'></div>
+     </Contato>
      <Sobre></Sobre>
+     <Livros></Livros>
+     <Filmes></Filmes>
      <Apidragon></Apidragon>
      <Footer></Footer>
 

@@ -63,7 +63,7 @@ class Github extends Component {
                             <div className="card bg-card">
                                 Nome do Repositorio: {repositorio.name} <br/>
                                 Descrição: {repositorio.deion} <br/>
-                                Link do Repositório: <a href={repositorio.html_url}>Clique Aqui</a>
+                                Link do Repositório: <a  className='link'href={repositorio.html_url}>Clique Aqui</a>
                             </div>
                     )}
                     </div>

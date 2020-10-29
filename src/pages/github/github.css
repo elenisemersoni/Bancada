@@ -32,4 +32,9 @@
     text-align: center;
     color: aliceblue;
 }
-
+.link{
+    color: snow;
+}
+.link:hover {
+    color: snow;
+}

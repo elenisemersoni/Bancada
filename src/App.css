@@ -43,6 +43,9 @@
 }
 .textocor{
   color: white}
+.textocor:hover{
+  color:white
+}
 
   #root {
     background-color: darksalmon;

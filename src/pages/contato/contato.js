@@ -11,49 +11,6 @@ class Contato extends Component {
                  <div class="cover">
                      <img src={img}></img>
                  </div>
-                 
-             </div> 
-             <div class="back">
-                 <div class="header">
-                     <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
-                 </div>
-                 <div class="content">
-                     <div class="main">
-                         <h4 class="text-center">Job Description</h4>
-                         <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
-
-                         <div class="stats-container">
-                             <div class="stats">
-                                 <h4>235</h4>
-                                 <p>
-                                     Followers
-                                 </p>
-                             </div>
-                             <div class="stats">
-                                 <h4>114</h4>
-                                 <p>
-                                     Following
-                                 </p>
-                             </div>
-                             <div class="stats">
-                                 <h4>35</h4>
-                                 <p>
-                                     Projects
-                                 </p>
-                             </div>
-                         </div>
-
-                     </div>
-                 </div>
-                
-             </div> 
-         </div> 
-
-         <div class="card">
-             <div class="front">
-                 <div class="cover">
-                     <img src={img}></img>
-                 </div>
                  <div class="content">
                      <div class="main">
                          <h3 class="name">Elenise Mersoni</h3>

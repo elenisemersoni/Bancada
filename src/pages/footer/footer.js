@@ -15,10 +15,10 @@ class Footer extends Component {
                     <div className='col'>
                         <p>Redes Sociais</p>
                         <div className='row img '>
-                            <a href='https://www.facebook.com'><img src={facebook}></img></a>
-                            <a href='https://www.instagram.com'><img src={instagram}></img></a>
+                            <a href='https://www.facebook.com/elenise.darosamersoni/'><img src={facebook}></img></a>
+                            <a href='https://www.instagram.com/eleniserm/'><img src={instagram}></img></a>
                             <a href='https://telegram.org'><img src={telegram}></img></a>
-                            <a href='https://www.twitter.com'><img src={twitter}></img></a>
+                            <a href='https://twitter.com/lenisemersoni'><img src={twitter}></img></a>
                             <a href='https://telegram.org/'><img src={whatsapp}></img></a>
                         </div>
                     </div>
