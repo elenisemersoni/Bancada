@@ -5,7 +5,7 @@ import Apidragon from './pages/apidragon/apidragon';
 import Sobre from './pages/sobre/sobre';
 import './App.css';
 import Footer from './pages/footer/footer';
-
+import Contato from './pages/contato/contato'
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
               <a className='mx-2 textocor' href= 'Parceiro'>Parceiros</a><br></br>
               </nav>
      <Github></Github>
+     <Contato></Contato>
      <Sobre></Sobre>
      <Apidragon></Apidragon>
      <Footer></Footer>

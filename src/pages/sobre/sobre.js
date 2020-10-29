@@ -5,12 +5,12 @@ import './sobre.css';
 class Sobre extends Component {
     render() {
         return (
-        <div className='container text-center bg2 texto'>
+        <div className=' container mb-2 text-center bg2 texto'>
             <h1>Quem somos</h1>
             <div class="row">
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4"></div>
             </div>
             <div class="row align-items-start">
     <div class="col">
